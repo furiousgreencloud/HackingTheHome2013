@@ -7,7 +7,7 @@ pinNo = 25
      
 # SETUP
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(pin, GPIO.OUT)
+GPIO.setup(pinNo, GPIO.OUT)
 
 
 def main() :
