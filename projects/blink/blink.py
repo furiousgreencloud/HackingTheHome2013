@@ -1,26 +1,18 @@
 # IMPORTS
 from time import sleep
 import RPi.GPIO as GPIO
-
-# VARIABLES
-pinNo = 25
      
 # SETUP
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(pinNo, GPIO.OUT)
+GPIO.setup(25, GPIO.OUT)
 
 
-def main() :
-	# LOOP
-	while 1:
-		GPIO.output(pinNo, GPIO.HIGH)
-		print("hi")
-		sleep(2)
-		GPIO.output(pinNo, GPIO.LOW)
-		print("lo")
-		sleep(1)
-		
-main()
-
+while True: # loop forever
+	GPIO.output(25, GPIO.HIGH) #make pin 25, go into a HIGH voltage state
+	print("HIGH") #print out the text "HIGH"
+	sleep(2) # sleep for 2 seconds
+	GPIO.output(25, GPIO.LOW)
+	print("LOW")
+	sleep(1)
 
 GPIO.cleanup()
