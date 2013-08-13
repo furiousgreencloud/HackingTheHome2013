@@ -1,27 +1,28 @@
 # IMPORTS
 from time import sleep
-import RPi.GPIO as GPIO
+from RPi.GPIO import *
 
 # VARIABLES
 pinNo = 25
      
 # SETUP
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(pinNo, GPIO.OUT)
+setmode(BCM)
+setup(pinNo, OUT)
 
-
+# MAIN
 def main() :
-	# LOOP
+	# Loop Forever
 	while True:
-		GPIO.output(pinNo, GPIO.HIGH)
-		print("hi")
+		output(pinNo, HIGH)
+		print "hi"
 		sleep(2)
-		GPIO.output(pinNo, GPIO.LOW)
-		print("lo")
+		output(pinNo, LOW)
+		print "lo"
 		sleep(1)
 		
 try :
 	main()
-finally:
-	print("Cleaning Up")
-	GPIO.cleanup()
+except : 
+	KeyboardInterrupt
+	print "\nCleaning Up"
+	cleanup() # 
