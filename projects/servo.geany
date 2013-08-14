@@ -15,6 +15,7 @@ indent_mode=2
 [project]
 name=servo
 base_path=/home/pi/projects/servo/
+description=
 
 [long line marker]
 long_line_behaviour=1
@@ -22,6 +23,7 @@ long_line_column=72
 
 [files]
 current_page=0
+FILE_NAME_0=563;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fprojects%2Fservo%2Fsweep.py;0;4
 
 [VTE]
-last_dir=/home/pi
+last_dir=/home/pi/HackingTheHome2013/projects/servo
