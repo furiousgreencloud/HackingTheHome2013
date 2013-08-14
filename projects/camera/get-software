@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo apt-get install motion
+sudo apt-get install python-opencv python-scipy python- numpy python-pip
+sudo pip install https://github.com/ingenuitas/SimpleCV/zipball/master
