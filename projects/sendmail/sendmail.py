@@ -13,4 +13,4 @@ def sendmail(subject, to, msg) :
 
 sendmail('In reguard to the matter of "me"',
   "furiousgreencloud@gmail.com",
-  "You didn't ask before you took my favourite pencil")
+  "You didn't ask me before you took my favourite pencil")
